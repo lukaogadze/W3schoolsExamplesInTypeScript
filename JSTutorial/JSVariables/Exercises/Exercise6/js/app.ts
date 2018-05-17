@@ -1,7 +1,10 @@
 /*Use a single var keyword to create three variables with the following values:
 firstName = "John"
 lastName = "Doe"
-age = 35*/
+age = 35
+document.getElementById("demo").innerHTML = 
+firstName + " " + lastName + " is " + age;
+*/
 document.body.onload = function (): void {
     const firstName: string = "John",
     lastName: string = "Doe",
