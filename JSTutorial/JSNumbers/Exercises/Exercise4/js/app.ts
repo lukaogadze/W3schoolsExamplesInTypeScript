@@ -2,5 +2,5 @@
 document.body.onload = function (): void {
     const x: number = 8;
     const y: number = 5;
-    document.getElementById("demo")!.innerHTML = (8 * 5).toString();
+    document.getElementById("demo")!.innerHTML = (x * y).toString();
 };

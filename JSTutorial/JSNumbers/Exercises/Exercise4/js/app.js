@@ -3,6 +3,6 @@
 document.body.onload = function () {
     var x = 8;
     var y = 5;
-    document.getElementById("demo").innerHTML = (8 * 5).toString();
+    document.getElementById("demo").innerHTML = (x * y).toString();
 };
 //# sourceMappingURL=app.js.map
