@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>For security reasons, eval() is not allowed to create variables in the scope from which it was called.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+"use strict";
+eval ("var x = 2");
+alert (x);          // This will cause an error 
+</script>
+
+</body>
+</html>

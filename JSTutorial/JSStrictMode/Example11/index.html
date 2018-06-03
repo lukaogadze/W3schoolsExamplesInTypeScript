@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>Writing to a read-only property is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+"use strict";
+var obj = {};
+Object.defineProperty(obj, "x", {value:0, writable:false});
+
+obj.x = 3.14;   // This will cause an error
+</script>
+
+</body>
+</html>
