@@ -1,6 +1,6 @@
 "use strict";
 document.body.onload = function () {
-    var text;
+    var text = "";
     switch (new Date().getDay()) {
         case 4:
         case 5:

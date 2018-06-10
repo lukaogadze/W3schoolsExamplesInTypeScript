@@ -1,6 +1,6 @@
 "use strict";
 document.body.onload = function () {
-    var day;
+    var day = "";
     switch (new Date().getDay()) {
         case 0:
             day = "Sunday";

@@ -1,5 +1,5 @@
 document.body.onload = function (): void {
-    let text: string;
+    let text: string = "";
     switch (new Date().getDay()) {
         case 4:
         case 5:

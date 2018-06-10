@@ -1,5 +1,5 @@
 document.body.onload = function (): void {
-    var day;
+    let day: string = "";
     switch (new Date().getDay()) {
         case 0:
             day = "Sunday";
