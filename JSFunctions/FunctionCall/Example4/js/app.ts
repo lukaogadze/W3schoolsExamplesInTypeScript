@@ -1,18 +1,27 @@
 window.onload = function (): void {
-    // this isn't valid ts code
-    // var person = {
-    //     fullName: function (city, country) {
-    //         return this.firstName + " " + this.lastName + "," + city + "," + country;
-    //     }
-    // }
-    // var person1 = {
-    //     firstName: "John",
-    //     lastName: "Doe",
-    // }
+    interface IName {
+        firstName: string;
+        lastName: string;
+    }
+    interface IPerson {
+        firstName?: string;
+        lastName?: string;
+        fullName: (city: string, country: string) => string;
+    }
+
+    const person: IPerson = {
+        fullName: function (city: string, country: string): string {
+            return this.firstName + " " + this.lastName + "," + city + "," + country;
+        }
+    }
+    const person1: IName = {
+        firstName: "John",
+        lastName: "Doe",
+    }
     // var person2 = {
     //     firstName: "Mary",
     //     lastName: "Doe",
     // }
-    // var x = person.fullName.call(person1, "Oslo", "Norway");
-    document.getElementById("demo")!.innerHTML = "John Doe,Oslo,Norway";
+    const x: string = person.fullName.call(person1, "Oslo", "Norway");
+    document.getElementById("demo")!.innerHTML = x;
 };
