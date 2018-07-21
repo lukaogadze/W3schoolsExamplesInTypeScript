@@ -11,7 +11,7 @@ window.onload = function (): void {
                 document.getElementById("txtHint")!.innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "getcustomer.asp?q=" + str, true);
+        xhttp.open("GET", "https://www.w3schools.com/js/getcustomer.asp?q=" + str, true);
         xhttp.send();
     }
     document.getElementsByTagName("select")[0].onchange = function () {
